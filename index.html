@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script> <!--Ge en defer-->
+</head>
+<body>
+    <h1>Spel Sten, Sax, Påse!</h1>
+    <div class="intro">
+        <form>
+            <label for="fname">Ditt namn:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+        <button type="button" >submit</button>
+        </form> 
+    </div>
+    <div class="game">
+        <div class="styleHeader"><h2>Namn</h2></div>
+        <p>Ditt val</p>
+        <p class="MittVal">.</p>
+        <p>Din Poäng</p>
+        <p class="poängDu">0</p>
+        <div class="styleHeader"><h3 class="datorn">Datorn</h3></div>
+        <p>Datorns val</p>
+        <p class="datornRandom">.</p>
+        <p>Poäng datorn</p>
+        <p class="poängDator">0</p>
+        <div class="styleHeader"><h2 class="något">.</h2></div>
+    <h3>Välj</h3>
+        <div class="inputDiv">
+            <input type="radio" id="sten" name="val" value="0" checked />
+            <label for="sten">Sten</label><br>
+            <input type="radio" id="sax" name="val" value="1" checked />
+            <label for="sax">Sax</label><br>
+            <input type="radio" id="påse" name="val" value="2" checked />
+            <label for="påse">Påse</label>
+        </div>
+    </div>
+        
+<div class="popup">
+    <p class="popupText"></p>
+    
+    <div class="submitdiv"><button class="startaom">Starta om!</button></div>
+</div>
+</body>
+</html>
