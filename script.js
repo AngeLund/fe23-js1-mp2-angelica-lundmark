@@ -2,25 +2,13 @@ const oavgjort = 'Det blev oavgjort';
 const vann = 'Du vann rundan';
 const forlorar = 'Du förlorar rundan';
 
-const btn1 = document.querySelector('button');
 
 const restartbutton = document.querySelector('.startaom');
 restartbutton.addEventListener('click', restart);
-btn1.addEventListener('click', addName);
 const select = document.querySelectorAll('input[name="val"]');
-console.log(select);
 let valArr = ['Sten', 'Sax', 'Påse'];
-let inputEl = document.querySelector('#fname');
-inputEl.addEventListener('keypress', enter);
-
-function enter (event){
-    if (event.key === 'Enter'){
-        event.preventDefault();
-        btn1.click();
-    }
-
-
-}
+let form = document.querySelector('#nameForm');
+form.addEventListener('submit', addName);
 
 
 
@@ -142,6 +130,7 @@ function restart () {
 }
 
 function addName(event){
+    event.preventDefault();
     const playerName = document.querySelector('h2');
     const subName = document.querySelector('#fname').value;
     playerName.innerText = subName;
